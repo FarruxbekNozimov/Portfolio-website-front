@@ -1,0 +1,1 @@
+export { default } from "file:///home/farruxdev/Documents/Portfolio/Frontend/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
