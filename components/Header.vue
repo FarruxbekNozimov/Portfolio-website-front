@@ -1,7 +1,7 @@
 <script setup>
 const navLinks = [
 	{ name: "Home", path: "/" },
-	{ name: "Works", path: "/works" },
+	{ name: "Projects", path: "/projects" },
 	{ name: "Blog", path: "/blog" },
 	{ name: "Contact", path: "/contact" },
 ];
@@ -9,7 +9,10 @@ const navLinks = [
 <template>
 	<div
 		class="fixed w-full bg-slate-950 h-[70px] border-b-2 border-cyan-500 flex items-center px-10 justify-between text-white header">
-		<a href="/" class="italic text-2xl font-serif">FarruxDEV</a>
+		<a href="/" class="italic text-2xl font-serif">
+			<nuxt-img src="/Logo.png" sizes="sm:100vw md:50vw lg:400px" />
+			FarruxDEV
+		</a>
 		<div class="flex gap-10">
 			<router-link
 				v-for="el in navLinks"
