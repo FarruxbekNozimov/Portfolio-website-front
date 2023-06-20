@@ -1,9 +1,17 @@
-<script setup></script>
+<script setup>
+const { data, pending, error, refresh } = await useFetch(
+	"https://portfolio-farruxbeknozimov.vercel.app/api/projects",
+	{
+		pick: ["title"],
+	}
+);
+console.log(data, pending, error, refresh);
+</script>
 
 <template>
 	<div>
-		<div class="w-full px-32 py-20">
-			<div class="grid grid-cols-3 gap-5 mb-10">
+		<div class="w-full lg:px-32 md:px-14 py-20">
+			<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mb-10">
 				<div
 					v-for="el in 5"
 					class="border border-cyan-500 bg-slate-700/50 rounded-lg min-h-[300px] p-3">
