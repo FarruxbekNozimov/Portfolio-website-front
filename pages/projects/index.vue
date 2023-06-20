@@ -5,6 +5,7 @@ setTimeout(async () => {
 		"https://portfolio-farruxbeknozimov.vercel.app/api/projects"
 	);
 	projects.value = data.value;
+	console.log(projects.value);
 }, 1000);
 console.log(projects.value);
 </script>
@@ -13,10 +14,10 @@ console.log(projects.value);
 	<div class="w-full h-full">
 		<Header>My Projects</Header>
 		<div class="">
-			<div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
+			<div class="grid md:grid-cols-2 gap-5">
 				<div
 					v-if="!projects"
-					v-for="load in 4"
+					v-for="load in 2"
 					class="border-2 border-cyan-500 bg-slate-700/50 rounded-tr-2xl rounded-bl-2xl min-h-[400px] p-3 animate-pulse">
 					<div
 						class="flex items-center justify-center w-full h-[300px] rounded bg-gray-700 mb-4">
@@ -37,16 +38,14 @@ console.log(projects.value);
 						<div class="flex items-center justify-between gap-10">
 							<button
 								class="flex items-center justify-center gap-1 bg-cyan-500/70 hover:bg-cyan-500 p-1 px-2 rounded-md">
-								<IconCSS
+								<Icon
 									name="material-symbols:team-dashboard-outline"
 									class="text-xl" />Preview
 							</button>
 							<button
 								class="flex items-center justify-center gap-1 bg-black/30 hover:bg-black/70 text-cyan-500 p-1 px-3 rounded-md">
 								Demo
-								<IconCSS
-									name="mdi:microsoft-visual-studio-code"
-									class="text-xl" />
+								<Icon name="mdi:microsoft-visual-studio-code" class="text-xl" />
 							</button>
 						</div>
 					</div>
@@ -76,16 +75,14 @@ console.log(projects.value);
 					<div class="flex items-center justify-between gap-10">
 						<button
 							class="flex items-center justify-center gap-1 bg-cyan-500/70 hover:bg-cyan-500 p-1 px-2 rounded-md">
-							<IconCSS
+							<Icon
 								name="material-symbols:team-dashboard-outline"
 								class="text-xl" />Preview
 						</button>
 						<button
 							class="flex items-center justify-center gap-1 bg-black/30 hover:bg-black/70 text-cyan-500 p-1 px-3 rounded-md">
 							Demo
-							<IconCSS
-								name="mdi:microsoft-visual-studio-code"
-								class="text-xl" />
+							<Icon name="mdi:microsoft-visual-studio-code" class="text-xl" />
 						</button>
 					</div>
 				</div>

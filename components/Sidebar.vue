@@ -1,4 +1,5 @@
 <script setup>
+const openedNav = ref(false);
 const navLinks = [
 	{ icon: "ph:house-bold", name: "Home", path: "/" },
 	{ icon: "material-symbols:account-circle", name: "About", path: "/about" },
@@ -15,7 +16,12 @@ const navLinks = [
 
 <template>
 	<div
-		class="w-72 bg-gray-900 h-screen border-r border-cyan-500 shadow shadow-cyan-500 relative overflow-y-auto">
+		class="absolute w-72 lg:left-0 h-screen -left-72 bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
+		:class="openedNav ? 'lg:left-0' : 'w-72'">
+		<button
+			class="lg:hidden absolute -right-16 text-2xl top-5 bg-gray-800 sm:flex items-center justify-center rounded border border-cyan-500 p-1 px-2 text-cyan-500">
+			<Icon name="iconamoon:menu-burger-horizontal-bold" />
+		</button>
 		<a
 			href="/"
 			class="top-0 left-2 bg-gray-900 gap-2 flex items-center justify-center py-5">
@@ -29,7 +35,7 @@ const navLinks = [
 						:to="el.path"
 						class="text-cyan-300 bg-gray-950 duration-300 cursor-pointer px-5 py-3 rounded-xl text-md group hover:bg-cyan-500 hover:text-gray-950 flex items-center justify-between mt-3 border-b-2 border-transparent">
 						<div class="flex items-center text-md gap-2">
-							<i :class="el.icon" class="text-lg group-hover:bx-tada"></i>
+							<Icon :name="el.icon" class="text-xl" />
 							{{ el.name }}
 						</div>
 					</router-link>

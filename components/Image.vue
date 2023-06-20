@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div
-			class="absolute bg-black/50 z-50 top-0 left-0 flex items-center justify-center duration-300"
+			class="absolute bg-black/50 z-10 top-0 left-0 flex items-center justify-center duration-300"
 			@click="() => (full = false)"
 			:class="full ? 'h-full w-full' : 'w-0 h-0'">
 			<img class="object-contain rounded-xl w-[80%] h-[80%]" :src="src" />
