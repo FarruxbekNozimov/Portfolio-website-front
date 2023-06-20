@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<div class="w-full md:flex items-center justify-evenly lg:px-10 px-5 py-20">
-			<div class="md:w-[40%] w-full mb-5 text-white">
+		<div class="w-full flex items-center justify-evenly">
+			<div class="lg:w-[50%] w-full mb-5 text-white">
 				<h1 class="text-5xl my-4">Hi, I am Farruxbek</h1>
 				<h3 class="text-3xl text-cyan-500">Software Engineer</h3>
 				<p class="text-lg text-gray-400 mb-5 w-[80%]">
@@ -9,7 +9,7 @@
 				</p>
 				<button class="bg-cyan-500 px-5 py-2 rounded-lg">Download CV</button>
 			</div>
-			<div class="lg:w-[40%] relative">
+			<div class="hidden lg:block lg:w-[50%] relative">
 				<img
 					src="https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png"
 					alt=""
