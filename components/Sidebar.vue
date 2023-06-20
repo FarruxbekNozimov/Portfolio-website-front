@@ -12,31 +12,36 @@ const navLinks = [
 	{ icon: "solar:chat-dots-outline", name: "Contact", path: "/contact" },
 ];
 </script>
+
 <template>
 	<div
-		class="absolute w-72 lg:left-0 h-screen md:-left-72 h-full bg-slate-900 border-r border-cyan-500 text-white duration-300">
+		class="w-72 bg-gray-900 h-screen border-r border-cyan-500 shadow shadow-cyan-500 relative overflow-y-auto">
 		<a
 			href="/"
-			class="flex items-center justify-center block italic text-2xl font-mono gap-2 w-full">
-			<img src="/logo.png" class="w-full" />
+			class="top-0 left-2 bg-gray-900 gap-2 flex items-center justify-center py-5">
+			<img src="/logo.png" alt="logo" class="w-full" />
 		</a>
-		<div class="gap-10 p-10">
-			<router-link
-				v-for="el in navLinks"
-				:to="el.path"
-				class="text-xl cursor-pointer px-5 p-3 border-b-2 border-transparent rounded-xl hover:rounded-none hover:border-cyan-500 duration-300 flex items-center gap-2">
-				<Icon :name="el.icon" class="text-2xl" />
-				{{ el.name }}
-			</router-link>
+		<div class="px-5">
+			<div class="">
+				<div v-for="el in navLinks">
+					<router-link
+						@click="() => (menuId = el.id)"
+						:to="el.path"
+						class="text-cyan-300 bg-gray-950 duration-300 cursor-pointer px-5 py-3 rounded-xl text-md group hover:bg-cyan-500 hover:text-gray-950 flex items-center justify-between mt-3 border-b-2 border-transparent">
+						<div class="flex items-center text-md gap-2">
+							<i :class="el.icon" class="text-lg group-hover:bx-tada"></i>
+							{{ el.name }}
+						</div>
+					</router-link>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <style scoped>
 .router-link-exact-active {
-	border-radius: 0;
 	border-bottom: 2px solid rgb(6 182 212);
-	color: rgb(6 182 212);
 }
 
 /* .header {

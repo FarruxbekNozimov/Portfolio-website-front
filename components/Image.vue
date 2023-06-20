@@ -13,11 +13,11 @@
 		<div class="group relative h-full">
 			<img class="object-cover w-full h-full rounded-lg" :src="src" />
 			<div
-				class="group-hover:block absolute top-5 right-5 bg-black/70 border border-cyan-500 rounded duration-300">
+				class="group-hover:block absolute top-2 right-2 bg-black/70 border border-cyan-500 rounded duration-300">
 				<Icon
 					@click="() => (full = true)"
 					name="gridicons:fullscreen"
-					class="cursor-pointer hover:scale-110 text-white text-5xl" />
+					class="cursor-pointer hover:scale-110 duration-300 text-white text-3xl" />
 			</div>
 		</div>
 	</div>

@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Footer': typeof import("../components/Footer.vue")['default']
+    'Header': typeof import("../components/Header.vue")['default']
     'Image': typeof import("../components/Image.vue")['default']
     'Sidebar': typeof import("../components/Sidebar.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -25,6 +26,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
+    'LazyHeader': typeof import("../components/Header.vue")['default']
     'LazyImage': typeof import("../components/Image.vue")['default']
     'LazySidebar': typeof import("../components/Sidebar.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -51,6 +53,7 @@ declare module 'vue' {
 }
 
 export const Footer: typeof import("../components/Footer.vue")['default']
+export const Header: typeof import("../components/Header.vue")['default']
 export const Image: typeof import("../components/Image.vue")['default']
 export const Sidebar: typeof import("../components/Sidebar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
@@ -74,6 +77,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
+export const LazyHeader: typeof import("../components/Header.vue")['default']
 export const LazyImage: typeof import("../components/Image.vue")['default']
 export const LazySidebar: typeof import("../components/Sidebar.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']

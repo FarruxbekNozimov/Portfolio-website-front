@@ -5,16 +5,18 @@ setTimeout(async () => {
 		"https://portfolio-farruxbeknozimov.vercel.app/api/projects"
 	);
 	projects.value = data.value;
-}, 100);
+}, 1000);
 console.log(projects.value);
 </script>
 
 <template>
-	<div>
-		<div class="w-full">
-			<div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5 mb-10">
+	<div class="w-full h-full">
+		<Header>My Projects</Header>
+		<div class="">
+			<div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
 				<div
 					v-if="!projects"
+					v-for="load in 4"
 					class="border-2 border-cyan-500 bg-slate-700/50 rounded-tr-2xl rounded-bl-2xl min-h-[400px] p-3 animate-pulse">
 					<div
 						class="flex items-center justify-center w-full h-[300px] rounded bg-gray-700 mb-4">
@@ -30,7 +32,7 @@ console.log(projects.value);
 					</div>
 					<div class="w-full text-center">
 						<div class="h-6 rounded-full mx-auto bg-gray-700 w-64 mb-2"></div>
-						<div class="h-5 rounded-full mx-auto bg-gray-700 w-96 mb-4"></div>
+						<div class="h-5 rounded-full mx-auto bg-gray-700 w-full mb-4"></div>
 						<div class="border-b border-cyan-500 my-4"></div>
 						<div class="flex items-center justify-between gap-10">
 							<button
