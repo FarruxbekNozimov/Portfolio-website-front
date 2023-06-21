@@ -1,3 +1,10 @@
+<script setup>
+const { data } = await useFetch(
+	"https://portfolio-farruxbeknozimov.vercel.app/api/socials"
+);
+console.log(data.value);
+</script>
+
 <template>
 	<div>
 		<div class="w-full flex items-center justify-evenly py-10">
@@ -7,6 +14,15 @@
 				<p class="text-lg text-gray-400 mb-5 w-[80%]">
 					Hello, I am Web Developer. I love coding.
 				</p>
+				<div class="w-full flex gap-3 mb-5">
+					<a
+						v-for="el in data"
+						target="_blank"
+						:href="el.link"
+						class="p-2 rounded-full flex items-center justify-center bg-slate-700 hover:bg-slate-500">
+						<Icon :name="el.icon" class="block text-white" />
+					</a>
+				</div>
 				<button class="bg-cyan-500 px-5 py-2 rounded-lg">Download CV</button>
 			</div>
 			<div class="hidden md:block md:w-[50%] relative">
@@ -18,5 +34,3 @@
 		</div>
 	</div>
 </template>
-
-<script setup></script>
