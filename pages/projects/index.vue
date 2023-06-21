@@ -5,9 +5,7 @@ setTimeout(async () => {
 		"https://portfolio-farruxbeknozimov.vercel.app/api/projects"
 	);
 	projects.value = data.value;
-	console.log(projects.value);
 }, 1000);
-console.log(projects.value);
 </script>
 
 <template>

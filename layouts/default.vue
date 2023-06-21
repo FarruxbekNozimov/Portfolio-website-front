@@ -2,7 +2,7 @@
 	<div>
 		<div class="h-screen overflow-y-hidden bg-slate-950">
 			<Sidebar />
-			<main class="h-full overflow-y-auto lg:ml-72 m-0 p-6">
+			<main class="h-full overflow-y-auto lg:ml-72 m-0 p-6 lg:pt-6 pt-20">
 				<slot />
 			</main>
 			<Footer />
