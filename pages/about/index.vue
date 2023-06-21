@@ -47,10 +47,15 @@ const { data: skills } = await useFetch(
 					<span class="text-sm font-mono">{{ data[0].phone }}</span>
 				</span>
 			</div>
-			<div class="my-5 grid grid-cols-2 gap-5 w-[50%]">
-				<h1 v-for="skill in skills" class="bg-red-500">
-					<span class="text-cyan-500">{{ skill.title }}</span>
-				</h1>
+			<div class="my-5 gap-3 w-[50%]">
+				<h1 class="text-cyan-500 text-lg mb-3">Skills</h1>
+				<div class="flex flex-wrap">
+					<span
+						v-for="skill in skills"
+						class="bg-slate-800 px-2 mb-2 rounded text-cyan-200 mr-2"
+						>nodejs</span
+					>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -12,7 +12,7 @@ console.log(data.value);
 				<h1 class="text-5xl my-4">Hi, I am Farruxbek</h1>
 				<h3 class="text-3xl text-cyan-500">Software Engineer</h3>
 				<p class="text-lg text-gray-400 mb-5 w-[80%]">
-					Hello, I am Web Developer. I love coding.
+					Hello, I am FullStack Software Engineer. I love coding.
 				</p>
 				<div class="w-full flex gap-3 mb-5">
 					<a
