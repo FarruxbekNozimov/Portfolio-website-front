@@ -302,7 +302,7 @@ function useHead(input, options = {}) {
     return isBrowser ? clientUseHead(input, options) : serverUseHead(input, options);
   }
 }
-const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }, { "name": "description", "content": "Farruxbek Developer Portfolio Website." }, { "name": "author", "content": "FarruxDEV" }], "link": [{ "rel": "stylesheet", "href": "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" }, { "rel": "icon", "href": "/logo-icon.png" }], "style": [], "script": [], "noscript": [], "title": "Farruxbek | Portfolio" };
+const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }, { "name": "description", "content": "Farruxbek Developer Portfolio Website." }, { "name": "author", "content": "FarruxDEV" }], "link": [{ "rel": "stylesheet", "href": "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" }, { "rel": "icon", "href": "/icon.png" }], "style": [], "script": [], "noscript": [], "title": "Farruxbek | Portfolio" };
 const appLayoutTransition = false;
 const appPageTransition = false;
 const appKeepalive = false;
