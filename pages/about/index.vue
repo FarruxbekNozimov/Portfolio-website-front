@@ -52,9 +52,10 @@ const { data: skills } = await useFetch(
 				<div class="flex flex-wrap">
 					<span
 						v-for="skill in skills"
-						class="bg-slate-800 px-2 mb-2 rounded text-cyan-200 mr-2"
-						>nodejs</span
-					>
+						class="bg-slate-800 px-2 mb-2 rounded text-cyan-200 mr-2">
+						<Icon :name="skill.icon" />
+						{{ skill.title }}
+					</span>
 				</div>
 			</div>
 		</div>
