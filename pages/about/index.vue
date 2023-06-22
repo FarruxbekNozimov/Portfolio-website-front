@@ -53,7 +53,7 @@ const { data: skills } = await useFetch(
 					v-for="skill in skills"
 					target="_blank"
 					:href="`https://www.google.com/search?q=${skill.title}&oq=html&aqs=chrome..69i57j0i67i650l2j0i512l3j69i60l2.590j0j7&sourceid=chrome&ie=UTF-8`"
-					class="cursor-pointer bg-slate-800 hover:bg-slate-700 duration-300 px-3 p-2 mb-3 rounded text-cyan-200 mr-3 flex items-center gap-2">
+					class="cursor-pointer bg-slate-800 hover:bg-slate-700 duration-300 px-3 p-2 mb-3 rounded-md text-cyan-200 mr-3 flex items-center gap-2">
 					<Icon :name="skill.icon" class="text-xl" />
 					{{ skill.title }}
 				</a>
