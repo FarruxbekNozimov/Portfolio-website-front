@@ -16,7 +16,7 @@ const navLinks = [
 
 <template>
 	<div
-		class="absolute w-72 lg:left-0 h-screen -left-72 bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
+		class="absolute w-[250px] lg:left-0 h-screen -left-[250px] bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
 		:class="openedNav ? 'lg:left-0' : 'w-72'">
 		<button
 			class="lg:hidden absolute -right-16 text-2xl top-5 bg-gray-800 sm:flex items-center justify-center rounded border border-cyan-500 p-1 px-2 text-cyan-500">
@@ -50,9 +50,9 @@ const navLinks = [
 	border-bottom: 2px solid rgb(6 182 212);
 }
 
-/* .header {
+.header {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(4.7px);
 	-webkit-backdrop-filter: blur(4.7px);
-} */
+}
 </style>
