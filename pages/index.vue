@@ -9,7 +9,9 @@ console.log(data.value);
 	<div>
 		<div class="w-full flex items-center justify-evenly py-10">
 			<div class="md:w-[50%] w-full mb-5 text-white">
-				<h1 class="text-5xl my-4">Hi, I am Farruxbek</h1>
+				<h1 class="text-5xl my-4">
+					Hi, I am <span class="text-cyan-500">Farruxbek</span>
+				</h1>
 				<h3 class="text-3xl text-cyan-500">Software Engineer</h3>
 				<p class="text-lg text-gray-400 mb-5 w-[80%]">
 					Hello, I am FullStack Software Engineer. I love coding.

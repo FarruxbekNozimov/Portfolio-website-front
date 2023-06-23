@@ -16,7 +16,7 @@ const navLinks = [
 
 <template>
 	<div
-		class="absolute w-[250px] lg:left-0 h-screen -left-[250px] bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
+		class="absolute w-24 hover:w-72 lg:left-0 h-screen -left-72 bg-slate-900 duration-300 bg-gray-900 border-r border-cyan-500"
 		:class="openedNav ? 'lg:left-0' : 'w-72'">
 		<button
 			class="lg:hidden absolute -right-16 text-2xl top-5 bg-gray-800 sm:flex items-center justify-center rounded border border-cyan-500 p-1 px-2 text-cyan-500">
@@ -33,10 +33,10 @@ const navLinks = [
 					<router-link
 						@click="() => (menuId = el.id)"
 						:to="el.path"
-						class="text-cyan-300 bg-gray-950 duration-300 cursor-pointer px-5 py-3 rounded-xl text-md group hover:bg-cyan-500 hover:text-gray-950 flex items-center justify-between mt-3 border-b-2 border-transparent">
+						class="text-cyan-300 bg-gray-950 duration-300 cursor-pointer px-5 py-3 rounded-xl text-md hover:bg-cyan-500 hover:text-gray-950 flex items-center justify-between mt-3 border-b-2 border-transparent">
 						<div class="flex items-center text-md gap-2">
 							<Icon :name="el.icon" class="text-xl" />
-							{{ el.name }}
+							<h4 class="group-hover:block hidden">{{ el.name }}</h4>
 						</div>
 					</router-link>
 				</div>
