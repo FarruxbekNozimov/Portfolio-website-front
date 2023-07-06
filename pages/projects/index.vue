@@ -11,7 +11,7 @@ setTimeout(async () => {
 <template>
 	<div class="w-full h-full">
 		<Header>My Projects</Header>
-		<div class="">
+		<div class="pb-10">
 			<div class="grid md:grid-cols-2 gap-5">
 				<div
 					v-if="!projects"
@@ -59,29 +59,33 @@ setTimeout(async () => {
 					<h1 class="text-cyan-400 text-2xl text-center mt-3">
 						{{ el?.title }}
 					</h1>
-					<p class="text-sm text-cyan-100 text-center">
+					<p class="text-sm text-cyan-100 text-center h-10">
 						{{ el?.description }}
 					</p>
 					<div class="border-b border-cyan-500 my-4"></div>
-					<!-- <div class="flex flex-wrap mb-3">
+					<div class="flex flex-wrap mb-3">
 						<p
 							v-for="el in ['html', 'css', 'js', 'bootstrap']"
 							class="cursor-pointer text-cyan-200 mr-2 text-center bg-gray-950/50 hover:bg-gray-950 duration-300 p-1 rounded mt-2">
 							#{{ el }}
 						</p>
-					</div> -->
+					</div>
 					<div class="flex items-center justify-between gap-10">
-						<button
+						<a
+							target="_blank"
+							:href="el.preview"
 							class="flex items-center justify-center gap-1 bg-cyan-500/70 hover:bg-cyan-500 p-1 px-2 rounded-md">
 							<Icon
 								name="material-symbols:team-dashboard-outline"
 								class="text-xl" />Preview
-						</button>
-						<button
+						</a>
+						<a
+							target="_blank"
+							:href="el.demo"
 							class="flex items-center justify-center gap-1 bg-black/30 hover:bg-black/70 text-cyan-500 p-1 px-3 rounded-md">
 							Demo
 							<Icon name="mdi:microsoft-visual-studio-code" class="text-xl" />
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>

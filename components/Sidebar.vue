@@ -36,7 +36,7 @@ const navLinks = [
 						class="text-cyan-300 bg-gray-950 duration-300 cursor-pointer px-5 py-3 rounded-xl text-md hover:bg-cyan-500 hover:text-gray-950 flex items-center justify-between mt-3 border-b-2 border-transparent">
 						<div class="flex items-center text-md gap-2">
 							<Icon :name="el.icon" class="text-xl" />
-							<h4 class="group-hover:block hidden">{{ el.name }}</h4>
+							<h4 class="block">{{ el.name }}</h4>
 						</div>
 					</router-link>
 				</div>
