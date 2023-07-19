@@ -48,6 +48,7 @@ const navLinks = [
 <style scoped>
 .router-link-exact-active {
 	border-bottom: 2px solid rgb(6 182 212);
+	border-radius: 10px 10px 5px 5px;
 }
 
 .header {
