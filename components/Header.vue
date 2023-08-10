@@ -2,12 +2,12 @@
 	<div
 		class="text-white w-full bg-black/50 h-9 pt-2 px-1 flex items-center justify-between">
 		<div class="flex items-center">
-			<div class="group relative w-[120px] h-9">
+			<div class="group relative w-[150px] h-9">
 				<button class="h-7 px-4 text-white hover:bg-white/20 rounded">
-					FarruxDEV
+					FarruxDEV OS
 				</button>
 				<div
-					class="absolute text-white py-2 top-9 hidden group-hover:block w-[200px] bg-black/50 rounded-lg px-2">
+					class="absolute text-white py-2 top-9 group-hover:block w-[200px] bg-black/50 rounded-lg px-2 hidden">
 					<div class="mb-2">
 						<img
 							src="/me.png"
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="flex items-center">
+			<div class="flex items-center pb-2">
 				<button
 					v-for="el in ['File', 'Edit', 'View', 'Go', 'Tools', 'Help']"
 					class="h-7 px-4 text-white hover:bg-white/20 rounded">

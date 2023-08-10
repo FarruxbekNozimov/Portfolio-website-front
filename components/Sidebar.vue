@@ -3,63 +3,44 @@ const docks = [
 	{
 		name: "Home",
 		img: "home.png",
-		path: "/home",
+		path: "/",
 	},
 	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
+		name: "About",
+		img: "finder.png",
+		path: "/about",
 	},
 	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
+		name: "Project",
+		img: "project.png",
+		path: "/projects",
 	},
 	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
+		name: "Trash",
+		img: "bin.png",
+		path: "",
 	},
 	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
-	},
-	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
-	},
-	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
-	},
-	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
-	},
-	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
-	},
-	{
-		name: "Home",
-		img: "home.png",
-		path: "/home",
+		name: "Applications",
+		img: "launchpad.png",
+		path: "",
 	},
 ];
 </script>
 
 <template>
-	<div class="absolute w-full bottom-5">
+	<div class="absolute w-full bottom-5 flex items-center justify-center">
 		<div
-			class="mx-auto bg-black/50 h-[70px] px-4 w-[50%] bottom-5 rounded-xl flex items-center gap-3">
-			<div v-for="el in docks" class="hover:scale-150 hover:mb-10 duration-300">
-				<img :src="`/dock/${el.img}`" class="w-14" alt="" />
-			</div>
+			class="mx-auto bg-black/50 h-[10vhs] px-4 bottom-5 rounded-xl flex items-center justify-center gap-3">
+			<router-link
+				v-for="el in docks"
+				:to="el.path"
+				class="cursor-pointer hover:scale-110 duration-300">
+				<img
+					:src="`/dock/${el.img}`"
+					class="w-14 hover:w-24 duration-300"
+					alt="" />
+			</router-link>
 		</div>
 	</div>
 </template>
