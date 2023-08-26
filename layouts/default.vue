@@ -5,16 +5,10 @@ definePageMeta({
 </script>
 
 <template>
-	<div>
-		<div class="h-screen overflow-y-hidden bg-slate-950">
-			<Sidebar id="parent" class="group" />
-			<main
-				id="child"
-				class="h-full overflow-y-auto lg:ml-72 m-0 p-6 lg:pt-6 pt-20">
-				<slot />
-			</main>
-			<Footer />
-		</div>
+	<div class="h-screen w-full overflow-y-hidden bg-[url('bg.png')]">
+		<Header />
+		<slot />
+		<Sidebar id="parent" class="group" />
 	</div>
 </template>
 
