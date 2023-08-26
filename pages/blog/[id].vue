@@ -17,9 +17,9 @@ console.log(data.value.content);
 				Back
 			</button>
 		</div>
-		<div class="p-5 px-20 bg-slate-800 rounded-lg my-5 text-cyan-500">
+		<div class="p-5 px-20 bg-slate-800 rounded-lg my-5 text-white">
 			<h1 class="text-3xl mb-10 font-bold">{{ data?.title }}</h1>
-			<div class="leading-7" v-html="data.content"></div>
+			<div class="text-center leading-7" v-html="data.content"></div>
 		</div>
 	</div>
 </template>
