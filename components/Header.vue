@@ -1,49 +1,11 @@
 <template>
-	<div
-		class="text-white w-full bg-black/50 h-9 pt-2 px-1 flex items-center justify-between">
-		<div class="flex items-center">
-			<div class="group relative w-[150px] h-9">
-				<button class="h-7 px-4 text-white hover:bg-white/20 rounded">
-					FarruxDEV OS
-				</button>
-				<div
-					class="absolute text-white py-2 top-9 group-hover:block w-[200px] bg-black/50 rounded-lg px-2 hidden">
-					<div class="mb-2">
-						<img
-							src="/me.png"
-							class="object-cover w-24 h-24 rounded-full mx-auto"
-							alt="" />
-					</div>
-					<div
-						class="p-1 px-2 rounded text-sm cursor-pointer hover:bg-blue-500 mb-1">
-						FarruxDEV OS
-					</div>
-					<hr class="border-b-1 border-gray-500 mb-1" />
-					<div
-						v-for="el in ['Sleep', 'Restart', 'Shutdown']"
-						class="p-1 px-2 rounded text-sm cursor-pointer hover:bg-blue-500 mb-1">
-						{{ el }}
-					</div>
-					<hr class="border-b-1 border-gray-500 mb-1" />
-					<div
-						class="p-1 px-2 rounded text-sm cursor-pointer hover:bg-blue-500 mb-1">
-						Lock Screen
-					</div>
-					<div
-						class="p-1 px-2 rounded text-sm cursor-pointer hover:bg-blue-500 mb-1">
-						Log Out
-					</div>
-				</div>
-			</div>
-			<div class="flex items-center pb-2">
-				<button
-					v-for="el in ['File', 'Edit', 'View', 'Go', 'Tools', 'Help']"
-					class="h-7 px-4 text-white hover:bg-white/20 rounded">
-					{{ el }}
-				</button>
-			</div>
+	<div class="w-full flex items-center justify-between py-5 overflow-hidden">
+		<h2 class="text-2xl">FarruxDEV</h2>
+		<div
+			class="h-10 w-10 bg-gray-300 text-gray-800 hover:bg-gray-400/80 cursor-pointer flex items-center justify-center text-2xl rounded-full">
+			<Icon name="material-symbols:dark-mode-outline" />
+			<!-- <Icon name="material-symbols:sunny-outline" /> -->
 		</div>
-		<div class=""></div>
 	</div>
 </template>
 

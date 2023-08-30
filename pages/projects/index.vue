@@ -10,7 +10,7 @@ setTimeout(async () => {
 
 <template>
 	<div class="w-full h-full">
-		<Header>My Projects</Header>
+		<Titlebar title="My Projects" />
 		<div class="pb-10">
 			<div class="grid md:grid-cols-2 gap-5">
 				<div

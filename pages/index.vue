@@ -1,37 +1,58 @@
 <script setup>
-const { data } = await useFetch(
-	"https://portfolio-farruxbeknozimov.vercel.app/api/socials"
-);
-console.log(data.value);
+const services = [
+	{
+		icon: "carbon:ibm-cloud-direct-link-1-dedicated-hosting",
+		name: "Web Application",
+		text: "Creating web applications using modern technologies for enhanced user experience.",
+	},
+	{
+		icon: "ic:baseline-miscellaneous-services",
+		name: "Build websites",
+		text: "Building backend side of applications and their architecture",
+	},
+	{
+		icon: "mdi:responsive",
+		name: "Responsive design",
+		text: "Creating responsive web design application and templates",
+	},
+	{
+		icon: "mdi:database-check-outline",
+		name: "Build database",
+		text: "Build organized collection of structured information for application",
+	},
+	{
+		icon: "simple-icons:civicrm",
+		name: "CRM developing",
+		text: "Make business strategy that involves collecting and analyzing customer data",
+	},
+	{
+		icon: "carbon:ibm-cloud-direct-link-1-dedicated-hosting",
+		name: "Hosting Websites",
+		text: "Make service through which storage resources are providing to an individual",
+	},
+];
 </script>
 
 <template>
 	<div>
-		<div class="w-full flex items-center justify-evenly py-10">
-			<div class="md:w-[50%] w-full mb-5 text-white">
-				<h1 class="text-5xl my-4">
-					Hi, I am <span class="text-cyan-500">Farruxbek</span>
-				</h1>
-				<h3 class="text-3xl text-cyan-500">Software Engineer</h3>
-				<p class="text-lg text-gray-400 mb-5 w-[80%]">
-					Hello, I am FullStack Software Engineer. I love coding.
-				</p>
-				<div class="w-full flex gap-3 mb-5">
-					<a
-						v-for="el in data"
-						target="_blank"
-						:href="el.link"
-						class="p-2 rounded-full flex items-center justify-center bg-slate-700 hover:bg-slate-500">
-						<Icon :name="el.icon" class="block text-white" />
-					</a>
+		<TitleBar title="About me" />
+		<p class="font-sans font-[400]">
+			Hello there! I'm thrilled to welcome you to my portfolio. I am a
+			passionate and versatile full-stack developer with a keen interest in
+			exploring the latest cutting-edge technologies. My journey in the world of
+			web development has been nothing short of exhilarating, and I constantly
+			strive to enhance my skills and embrace emerging trends in the industry.
+		</p>
+		<h3 class="py-5 text-2xl font-[500]">What I do !</h3>
+		<div class="grid grid-cols-2 gap-5">
+			<div
+				v-for="el in services"
+				class="p-3 rounded-xl shadow-lg bg-yellow-600 h-[105px] hover:shadow-xl hover:scale-105 duration-300">
+				<div class="flex items-center gap-3">
+					<Icon :name="el.icon" class="text-purple-800 text-2xl" />
+					<h3 class="text-lg">{{ el.name }}</h3>
 				</div>
-				<button class="bg-cyan-500 px-5 py-2 rounded-lg">Download CV</button>
-			</div>
-			<div class="hidden md:block md:w-[50%] relative">
-				<img
-					src="https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png"
-					alt=""
-					class="w-[300px] h-[300px] md:w-[400px] md:h-[400px] border-4 p-2 border-cyan-500 mx-auto object-cover rounded-full" />
+				<p class="pt-2 text-sm">{{ el.text }}</p>
 			</div>
 		</div>
 	</div>

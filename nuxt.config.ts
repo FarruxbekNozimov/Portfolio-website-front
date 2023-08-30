@@ -6,22 +6,30 @@ export default defineNuxtConfig({
 			autoprefixer: {},
 		},
 	},
-	modules: ["@nuxtjs/tailwindcss", "nuxt-icon"],
+	modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/google-fonts"],
 	app: {
 		head: {
 			title: "Farruxbek | Portfolio",
 			link: [
 				{
-					rel: "stylesheet",
-					href: "/css/style.css",
-				},
-				{
-					rel: "stylesheet",
-					href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",
-				},
-				{
 					rel: "icon",
 					href: "/icon.png",
+				},
+				{
+					rel: "preconnect",
+					href: "https://fonts.googleapis.com",
+				},
+				{
+					rel: "preconnect",
+					href: "https://fonts.gstatic.com",
+				},
+				{
+					rel: "stylesheet",
+					href: "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap",
+				},
+				{
+					rel: "stylesheet",
+					href: "/css/style.css",
 				},
 			],
 			meta: [
