@@ -2,6 +2,8 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'AboutCard': typeof import("../components/AboutCard.vue")['default']
+    'CardProject': typeof import("../components/CardProject.vue")['default']
+    'CardProjectLoad': typeof import("../components/CardProjectLoad.vue")['default']
     'Container': typeof import("../components/Container.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Header': typeof import("../components/Header.vue")['default']
@@ -31,6 +33,8 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyAboutCard': typeof import("../components/AboutCard.vue")['default']
+    'LazyCardProject': typeof import("../components/CardProject.vue")['default']
+    'LazyCardProjectLoad': typeof import("../components/CardProjectLoad.vue")['default']
     'LazyContainer': typeof import("../components/Container.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyHeader': typeof import("../components/Header.vue")['default']
@@ -63,6 +67,8 @@ declare module 'vue' {
 }
 
 export const AboutCard: typeof import("../components/AboutCard.vue")['default']
+export const CardProject: typeof import("../components/CardProject.vue")['default']
+export const CardProjectLoad: typeof import("../components/CardProjectLoad.vue")['default']
 export const Container: typeof import("../components/Container.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Header: typeof import("../components/Header.vue")['default']
@@ -92,6 +98,8 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyAboutCard: typeof import("../components/AboutCard.vue")['default']
+export const LazyCardProject: typeof import("../components/CardProject.vue")['default']
+export const LazyCardProjectLoad: typeof import("../components/CardProjectLoad.vue")['default']
 export const LazyContainer: typeof import("../components/Container.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyHeader: typeof import("../components/Header.vue")['default']

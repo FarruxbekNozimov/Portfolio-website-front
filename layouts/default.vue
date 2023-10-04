@@ -3,13 +3,12 @@
 <template>
 	<div class="font-['Fira_code'] overflow-y-auto h-screen">
 		<Container>
-			<Header />
 			<div class="gap-5 flex">
 				<AboutCard />
 				<div class="w-full">
 					<Navbar />
 					<div
-						class="rounded-xl h-[540px] shadow-xl bg-yellow-500 w-full p-10 px-10 overflow-y-auto relative">
+						class="rounded-xl h-[625px] shadow-xl bg-yellow-500 w-full p-10 px-10 overflow-y-auto">
 						<router-view />
 					</div>
 				</div>

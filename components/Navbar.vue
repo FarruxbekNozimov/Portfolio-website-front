@@ -1,7 +1,7 @@
 <script setup>
 const navs = [
 	{ icon: "ph:house-bold", name: "Home", path: "/" },
-	{ icon: "iconoir:multiple-pages", name: "Resume", path: "/resume" },
+	{ icon: "iconoir:multiple-pages", name: "Service", path: "/service" },
 	{ icon: "bytesize:portfolio", name: "Portfolio", path: "/projects" },
 	{ icon: "solar:chat-dots-outline", name: "Contact", path: "/contact" },
 ];

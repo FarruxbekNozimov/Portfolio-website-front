@@ -3,11 +3,11 @@
 <template>
 	<div>
 		<div
-			class="bg-yellow-500 h-auto w-96 mt-[100px] pb-5 relative rounded-xl pt-[90px] shadow-2xl">
+			class="bg-yellow-500 w-96 mt-[100px] pb-5 relative rounded-xl pt-[90px] shadow-2xl h-[625px]">
 			<div class="absolute -top-[70px] w-full text-center">
 				<img
-					src="/nodejs.png"
-					class="mx-auto rounded-xl object-cover border border-yellow-800 w-[150px] h-[150px] shadow-xl" />
+					src="/me.png"
+					class="mx-auto rounded-full object-cover border border-yellow-800 w-[150px] h-[150px] shadow-xl" />
 			</div>
 			<div class="px-5">
 				<h1 class="text-xl font-[500] text-center mb-2">Farruxbek Nozimov</h1>
@@ -57,11 +57,13 @@
 						</div>
 					</div>
 					<div class="text-center">
-						<button
-							class="w-56 py-2 rounded-full bg-gradient-to-r from-blue-800/70 to-black/80 hover:from-blue-800 hover:to-black duration-300 text-white text-2xl font-[400]">
+						<a
+							href="https://docs.google.com/document/d/1nm_tS9zjaUwJynHiz_2U6IlXUBHk7aqapstbmt0_l0w/edit"
+							target="_blank"
+							class="w-56 block mx-auto py-2 rounded-full bg-gradient-to-r from-blue-800/70 to-black/80 hover:from-blue-800 hover:to-black duration-300 text-white text-2xl font-[400]">
 							<Icon name="material-symbols:download-rounded" />
 							<span class="text-lg">Download CV</span>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
